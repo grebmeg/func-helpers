@@ -1,3 +1,3 @@
-const helper = require('./src');
+const helper = require('./src/excludeProperty');
 
 module.exports = helper;

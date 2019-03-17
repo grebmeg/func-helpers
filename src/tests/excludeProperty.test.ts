@@ -1,4 +1,4 @@
-const {excludeProperty} = require('../index');
+import {excludeProperty} from '../functions/excludeProperty';
 
 test('excludeProperty', () => {
     const testObject = {
@@ -6,7 +6,6 @@ test('excludeProperty', () => {
         second: [1, 2 ,3],
         third: {}
     };
-
 
     expect(excludeProperty(testObject, 'first'))
         .toHaveProperty('second');
