@@ -1,0 +1,25 @@
+{
+  "name": "helper",
+  "version": "0.0.1",
+  "description": "Helper functions",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grebmeg/helper.git"
+  },
+  "author": "Gemberg Alexey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grebmeg/helper/issues"
+  },
+  "homepage": "https://github.com/grebmeg/helper#readme",
+  "devDependencies": {
+    "jest": "^24.5.0"
+  }
+}
