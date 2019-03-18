@@ -1,17 +1,54 @@
 import {excludeProperty} from '../functions/excludeProperty';
 
-test('excludeProperty', () => {
-    const testObject = {
-        first: 'value',
-        second: [1, 2 ,3],
-        third: {}
-    };
 
-    expect(excludeProperty(testObject, 'first'))
-        .toHaveProperty('second');
-    expect(excludeProperty(testObject, 'first'))
-        .toHaveProperty('third');
-    expect(excludeProperty(testObject, 'first'))
-        .not
-        .toHaveProperty('first');
+describe('test excludeProperty function', () => {
+    test('immutable', () => {
+        const testObject = {
+            first: 'value',
+            second: [1, 2 ,3],
+            third: {}
+        };
+
+        const testObjectWithoutProperty = excludeProperty(
+            testObject,
+            'first',
+            {
+                immutable: true
+            }
+        );
+
+        expect(testObjectWithoutProperty)
+            .toBe(testObject);
+        expect(testObjectWithoutProperty)
+            .toHaveProperty('second');
+        expect(testObjectWithoutProperty)
+            .toHaveProperty('third');
+        expect(testObjectWithoutProperty)
+            .not
+            .toHaveProperty('first');
+    });
+
+    test('mutable', () => {
+        const testObject = {
+            first: 'value',
+            second: [1, 2 ,3],
+            third: {}
+        };
+
+        const testObjectWithoutProperty = excludeProperty(
+            testObject,
+            'first'
+        );
+
+        expect(testObjectWithoutProperty)
+            .not
+            .toBe(testObject);
+        expect(testObjectWithoutProperty)
+            .toHaveProperty('second');
+        expect(testObjectWithoutProperty)
+            .toHaveProperty('third');
+        expect(testObjectWithoutProperty)
+            .not
+            .toHaveProperty('first');
+    });
 });

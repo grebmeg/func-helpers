@@ -9,8 +9,16 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.excludeProperty = (object, excludedProperty) => {
+exports.excludeProperty = (object, excludedProperty, options = {}) => {
     const _a = excludedProperty, property = object[_a], rest = __rest(object, [typeof _a === "symbol" ? _a : _a + ""]);
-    return rest;
+    const { immutable } = options;
+    let result = object;
+    if (immutable) {
+        delete object[excludedProperty];
+    }
+    else {
+        result = rest;
+    }
+    return result;
 };
 //# sourceMappingURL=excludeProperty.js.map
