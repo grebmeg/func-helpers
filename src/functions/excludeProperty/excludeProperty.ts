@@ -1,4 +1,4 @@
-import {ExcludePropertyFunction} from '../../types';
+import {ExcludePropertyFunction} from '../../../types';
 
 export const excludeProperty: ExcludePropertyFunction =
     (object, excludedProperty, options = {}) => {

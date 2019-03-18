@@ -1,4 +1,4 @@
-import {excludeProperty} from '../functions/excludeProperty';
+import {excludeProperty} from './excludeProperty';
 
 
 describe('test excludeProperty function', () => {
