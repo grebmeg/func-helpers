@@ -9,3 +9,7 @@ export type ExcludePropertyFunction = (
         immutable?: boolean;
     }
 ) => object;
+
+export type ConvertBytesFunction = (
+    bytes: number
+) => string;
