@@ -5,4 +5,5 @@ export declare type ExcludePropertyFunction = (object: GeneralObjectInterface, e
     immutable?: boolean;
 }) => object;
 export declare type ConvertBytesFunction = (bytes: number) => string;
+export declare type RemoveDuplicatesFunction = (items: any[]) => any[];
 export {};

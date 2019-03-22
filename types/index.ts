@@ -13,3 +13,7 @@ export type ExcludePropertyFunction = (
 export type ConvertBytesFunction = (
     bytes: number
 ) => string;
+
+export type RemoveDuplicatesFunction = (
+    items: any[]
+) => any[];
