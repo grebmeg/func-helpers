@@ -17,3 +17,5 @@ export type ConvertBytesFunction = (
 export type RemoveDuplicatesFunction = (
     items: any[]
 ) => any[];
+
+export type RandomHexColorFunction = () => string;
