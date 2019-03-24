@@ -9,6 +9,7 @@ describe('test removeDuplicates function', () => {
 
         expect(itemsWithoutDuplicates).toEqual([1, 3, 4, 5]);
     });
+
     test('string', () => {
         const items = ['hello', 'world', 'world', 'hello'];
 

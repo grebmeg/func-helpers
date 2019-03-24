@@ -6,4 +6,5 @@ export declare type ExcludePropertyFunction = (object: GeneralObjectInterface, e
 }) => object;
 export declare type ConvertBytesFunction = (bytes: number) => string;
 export declare type RemoveDuplicatesFunction = (items: any[]) => any[];
+export declare type RandomHexColorFunction = () => string;
 export {};
