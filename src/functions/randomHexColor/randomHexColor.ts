@@ -1,5 +1,6 @@
 import {RandomHexColorFunction} from '../../../types';
 
+
 export const randomHexColor: RandomHexColorFunction = () => {
     const hex = Math.floor(Math.random() * 0xFFFFFF)
         .toString(16)
