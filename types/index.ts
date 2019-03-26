@@ -19,3 +19,7 @@ export type RemoveDuplicatesFunction = (
 ) => any[];
 
 export type RandomHexColorFunction = () => string;
+
+export type SleepFunction = (
+    ms: number
+) => Promise<number>;
