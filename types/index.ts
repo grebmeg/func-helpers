@@ -21,5 +21,6 @@ export type RemoveDuplicatesFunction = (
 export type RandomHexColorFunction = () => string;
 
 export type SleepFunction = (
-    ms: number
-) => Promise<number>;
+    ms: number,
+    async?: boolean
+) => Promise<number> | number;
