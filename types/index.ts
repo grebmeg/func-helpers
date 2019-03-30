@@ -24,3 +24,10 @@ export type SleepFunction = (
     ms: number,
     async?: boolean
 ) => Promise<number> | number;
+
+export type ReplaceAllFunction = (
+    str: string,
+    replacerMap: {
+        [goal: string]: any
+    }
+) => string;
