@@ -31,3 +31,13 @@ export type ReplaceAllFunction = (
         [goal: string]: any
     }
 ) => string;
+
+export type RetryFunction = (
+    callback: () => any,
+    options?: {
+        timeout: number,
+        maxCount: number
+    }
+) => any;
+
+export type InnerRetryFunction = () => any;
