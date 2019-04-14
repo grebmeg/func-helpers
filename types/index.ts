@@ -43,3 +43,4 @@ export type RetryFunction = (
 export type InnerRetryFunction = () => any;
 
 export type ComposeFunction = (...functions: any[]) => (...args: any[]) => any;
+export type PipeFunction = (...functions: any[]) => (...args: any[]) => any;
