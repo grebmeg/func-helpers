@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     mode: 'development',
     entry: './src/index.tsx',
@@ -19,8 +21,9 @@ module.exports = {
             loader: 'source-map-loader'
         }]
     },
-    externals: {
-        'react': 'React',
-        'react-dom': 'ReactDOM'
-    }
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: "./index.html"
+        })
+    ]
 };

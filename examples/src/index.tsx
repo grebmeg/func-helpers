@@ -8,5 +8,5 @@ ReactDOM.render(
         compiler="TypeScript"
         framework="React"
     />,
-    document.getElementById("example")
+    document.getElementById("root")
 );
