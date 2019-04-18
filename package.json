@@ -17,7 +17,9 @@
   "scripts": {
     "test": "jest",
     "test-watch": "jest --watch",
-    "build": "tsc"
+    "build": "tsc",
+    "build:webpack": "webpack --config examples/webpack.config.js",
+    "start": "webpack-dev-server --config examples/webpack.config.js --open"
   },
   "husky": {
     "hooks": {
@@ -34,7 +36,8 @@
     "ts-jest": "^24.0.0",
     "typescript": "^3.4.3",
     "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.0"
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
     "@types/react": "^16.8.13",
