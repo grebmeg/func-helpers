@@ -19,6 +19,7 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "experimentalDecorators": true,
+    "jsx": "react",
     "lib": [
       "dom",
       "es2018",
