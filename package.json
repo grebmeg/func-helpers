@@ -19,7 +19,8 @@
     "test-watch": "jest --watch",
     "build": "tsc",
     "build:webpack": "webpack --config examples/webpack.config.js",
-    "start": "webpack-dev-server --config examples/webpack.config.js --open"
+    "start": "webpack-dev-server --config examples/webpack.config.js --open",
+    "storybook": "start-storybook --config-dir examples/.storybook"
   },
   "husky": {
     "hooks": {
@@ -27,10 +28,13 @@
     }
   },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@storybook/react": "^5.0.10",
     "@types/jest": "^24.0.11",
     "@typescript-eslint/eslint-plugin": "^1.6.0",
     "@typescript-eslint/parser": "^1.6.0",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.5",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^1.3.1",
     "jest": "^24.5.0",
