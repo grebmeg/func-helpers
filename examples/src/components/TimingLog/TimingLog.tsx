@@ -1,8 +1,8 @@
 import * as React from "react";
 
-import {AppProps} from '../../types';
+import {TimingLog} from '../../types';
 
-export default function App(props: AppProps) {
+export default function TimingLog(props: TimingLog) {
     return (
         <h1>
             Hello!

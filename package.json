@@ -18,7 +18,6 @@
     "test": "jest",
     "test-watch": "jest --watch",
     "build": "tsc",
-    "build:webpack": "webpack --config examples/webpack.config.js",
     "start": "webpack-dev-server --config examples/webpack.config.js --open",
     "storybook": "start-storybook --config-dir examples/.storybook"
   },
