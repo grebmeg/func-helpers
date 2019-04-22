@@ -4,7 +4,7 @@ import {
 } from '../../../types';
 
 
-export const retry: RetryFunction = (callback, options = {
+const retry: RetryFunction = (callback, options = {
     timeout: 1000,
     maxCount: 3
 }) => {
@@ -38,3 +38,6 @@ export const retry: RetryFunction = (callback, options = {
 
     return innerRetry();
 };
+
+
+export default retry;

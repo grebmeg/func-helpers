@@ -1,6 +1,7 @@
 import {ExcludePropertyFunction} from '../../../types';
 
-export const excludeProperty: ExcludePropertyFunction =
+
+const excludeProperty: ExcludePropertyFunction =
     (object, excludedProperty, options = {}) => {
         const {
             [excludedProperty]: property,
@@ -17,3 +18,6 @@ export const excludeProperty: ExcludePropertyFunction =
 
         return result;
     };
+
+
+export default excludeProperty;

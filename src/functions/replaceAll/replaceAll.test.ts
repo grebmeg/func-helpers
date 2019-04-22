@@ -1,4 +1,4 @@
-import {replaceAll} from './replaceAll';
+import replaceAll from './replaceAll';
 
 const PROCESSED_STR = 'hi everyone hi everyone';
 

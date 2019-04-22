@@ -1,7 +1,8 @@
 import {ConvertBytesFunction} from '../../../types';
 import {UNIT_BYTES_PREFIX} from '../../constants';
 
-export const convertBytes: ConvertBytesFunction = (bytes) => {
+
+const convertBytes: ConvertBytesFunction = (bytes) => {
     if (bytes === 0) {
         return '0 Byte';
     }
@@ -11,3 +12,6 @@ export const convertBytes: ConvertBytesFunction = (bytes) => {
 
     return `${convertedBytes} ${UNIT_BYTES_PREFIX[i]}`;
 };
+
+
+export default convertBytes;

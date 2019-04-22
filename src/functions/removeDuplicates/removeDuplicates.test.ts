@@ -1,4 +1,4 @@
-import {removeDuplicates} from './removeDuplicates';
+import removeDuplicates from './removeDuplicates';
 
 
 describe('test removeDuplicates function', () => {

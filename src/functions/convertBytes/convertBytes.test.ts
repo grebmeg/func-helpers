@@ -1,4 +1,4 @@
-import {convertBytes} from './convertBytes';
+import convertBytes from './convertBytes';
 
 
 describe('test convertBytes function', () => {

@@ -1,7 +1,10 @@
 import {ComposeFunction} from '../../../types';
 
 
-export const compose: ComposeFunction = (...functions) => (args) =>
+const compose: ComposeFunction = (...functions) => (args) =>
     functions.reduceRight(
         (arg: any, fn: (arg: any) => any) => fn(arg), args
     );
+
+
+export default compose;

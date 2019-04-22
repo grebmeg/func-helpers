@@ -1,5 +1,6 @@
 import {Timing} from '../../../types';
 
+
 class TimingAPI {
     _markers: string[] = [];
 

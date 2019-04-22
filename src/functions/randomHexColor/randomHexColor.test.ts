@@ -1,4 +1,4 @@
-import {randomHexColor} from './randomHexColor';
+import randomHexColor from './randomHexColor';
 
 
 describe('test randomHexColor function', () => {

@@ -1,7 +1,7 @@
 import {SleepFunction} from '../../../types';
 
 
-export const sleep: SleepFunction = (ms, async = false) => {
+const sleep: SleepFunction = (ms, async = false) => {
     if (async) {
         return new Promise(resolve =>
             setTimeout(() => resolve(ms), ms)
@@ -14,5 +14,6 @@ export const sleep: SleepFunction = (ms, async = false) => {
         return ms;
     }
 };
+
 
 export default sleep;

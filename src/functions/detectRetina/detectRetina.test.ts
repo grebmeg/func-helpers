@@ -1,4 +1,4 @@
-import {detectRetina} from './detectRetina';
+import detectRetina from './detectRetina';
 
 
 describe('test detectRetina function', () => {

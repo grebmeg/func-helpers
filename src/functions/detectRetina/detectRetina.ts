@@ -1,6 +1,9 @@
 import {DetectRetinaFunction} from '../../../types';
 
 
-export const detectRetina: DetectRetinaFunction = () => {
+const detectRetina: DetectRetinaFunction = () => {
     return window.devicePixelRatio > 1;
 };
+
+
+export default detectRetina;

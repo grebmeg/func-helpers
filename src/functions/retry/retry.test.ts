@@ -1,4 +1,4 @@
-import {retry} from './retry';
+import retry from './retry';
 
 
 describe('test retry function', () => {
