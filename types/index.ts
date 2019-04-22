@@ -49,4 +49,6 @@ export type DetectRetinaFunction = () => boolean;
 
 export interface Timing {
     log: () => any;
+    mark: () => any;
+    display: () => any;
 }

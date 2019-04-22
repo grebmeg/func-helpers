@@ -1,4 +1,4 @@
-import {timing} from './timing';
+import timing from './timing';
 
 
 describe('test timing function', () => {

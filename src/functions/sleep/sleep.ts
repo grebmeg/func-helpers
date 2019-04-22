@@ -14,3 +14,5 @@ export const sleep: SleepFunction = (ms, async = false) => {
         return ms;
     }
 };
+
+export default sleep;
