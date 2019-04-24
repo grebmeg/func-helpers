@@ -1,5 +1,6 @@
-import {Timing} from '../../../types';
-
+import {
+    Timing
+} from '../../../types';
 
 class TimingAPI {
     _markers: string[] = [];
@@ -23,21 +24,35 @@ class TimingAPI {
     }
 
     display() {
-        this._markers.forEach((markerStart, index) => {
-            if (index < this._markers.length - 1) {
+        const markerStart = this._markers[0];
+
+        this._markers.forEach((marker, index) => {
+            if (index < this._markers.length) {
                 const markerEnd = this._markers[index + 1];
 
                 this.measure(markerStart, markerEnd);
             }
         });
 
-        const initialMarker = this._markers[0];
-
-        this.measure(initialMarker);
-
         const measures = performance.getEntriesByName('perf');
 
-        console.table(measures);
+        console.table(
+            measures.map((measure, index) => {
+                const {duration} = measure;
+                let delta = duration;
+
+                if (index > 0) {
+                    const {duration: precedingDuration} = measures[index - 1];
+
+                    delta = duration - precedingDuration;
+                }
+
+                return {
+                    duration,
+                    delta
+                };
+            })
+        );
 
         performance.clearMarks();
         performance.clearMeasures();
