@@ -1,3 +1,11 @@
+export enum ColorTypes {
+    HEX,
+    RGB,
+    HSL,
+    HWB,
+    CMYK
+}
+
 interface GeneralObjectInterface {
     [key: string]: any
 }
@@ -13,6 +21,11 @@ export type ExcludePropertyFunction = (
 export type ConvertBytesFunction = (
     bytes: number
 ) => string;
+
+export type ConvertColorFunction = (
+    color: string,
+    toColorType: ColorTypes
+) => any;
 
 export type RemoveDuplicatesFunction = (
     items: any[]
