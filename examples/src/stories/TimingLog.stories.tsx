@@ -6,4 +6,7 @@ import TimingLog from '../components/TimingLog/TimingLog';
 storiesOf('TimingLog', module)
     .add('performance browser api', () => (
         <TimingLog/>
+    ))
+    .add('console.time', () => (
+        <TimingLog console/>
     ));

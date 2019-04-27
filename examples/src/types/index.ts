@@ -1,1 +1,3 @@
-export interface TimingLog {}
+export interface TimingLog {
+    console?: boolean;
+}

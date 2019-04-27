@@ -5,6 +5,10 @@ export enum ColorTypes {
     HWB,
     CMYK
 }
+export enum TimingTypes {
+    PERFORMANCE_API,
+    CONSOLE_API
+}
 
 interface GeneralObjectInterface {
     [key: string]: any
@@ -60,8 +64,7 @@ export type PipeFunction = (...functions: any[]) => (...args: any[]) => any;
 
 export type DetectRetinaFunction = () => boolean;
 
-export interface Timing {
-    log: () => any;
-    mark: () => any;
-    display: () => any;
+
+export interface TimingSetupConfig {
+    type: TimingTypes;
 }
