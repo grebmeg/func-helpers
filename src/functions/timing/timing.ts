@@ -28,8 +28,23 @@ class TimingAPI {
         performance.mark(markerName);
     }
 
+    makeConsoleMarker() {
+        const markerCount = this._markers.length;
+        const markerName = `start-${markerCount}`;
+
+        this._markers.push(markerName);
+
+        if (markerCount !== 0) {
+            console.timeEnd(this._markers[markerCount - 1]);
+        }
+
+        console.time(markerName);
+    }
+
     mark() {
         switch (this._type) {
+            case TimingTypes.CONSOLE_API:
+                return this.makeConsoleMarker();
             case TimingTypes.PERFORMANCE_API:
             default:
                 return this.makePerformanceMarker();
@@ -76,8 +91,14 @@ class TimingAPI {
 
     }
 
+    displayConsoleMarkers() {
+        this.makeConsoleMarker();
+    }
+
     display() {
         switch (this._type) {
+            case TimingTypes.CONSOLE_API:
+                return this.displayConsoleMarkers();
             case TimingTypes.PERFORMANCE_API:
             default:
                 return this.makePerformanceMarker();

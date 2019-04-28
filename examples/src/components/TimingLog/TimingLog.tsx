@@ -14,7 +14,7 @@ export default function TimingLog(props: TimingLog) {
 
     const component = (
         <h1>
-            Hello!
+            Open the browser dev console to see outputs!
         </h1>
     );
 
