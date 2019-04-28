@@ -26,8 +26,12 @@ export type ConvertBytesFunction = (
     bytes: number
 ) => string;
 
+export type ConvertHexToRgbFunction = (
+    color: string
+) => any;
 export type ConvertColorFunction = (
     color: string,
+    fromColorType: ColorTypes,
     toColorType: ColorTypes
 ) => any;
 
