@@ -1,6 +1,7 @@
 export enum ColorTypes {
     HEX,
     RGB,
+    RGBA,
     HSL,
     HWB,
     CMYK
@@ -27,6 +28,9 @@ export type ConvertBytesFunction = (
 ) => string;
 
 export type ConvertHexToRgbFunction = (
+    color: string
+) => any;
+export type ConvertHexToRgbaFunction = (
     color: string
 ) => any;
 export type ConvertColorFunction = (

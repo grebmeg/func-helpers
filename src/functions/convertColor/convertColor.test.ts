@@ -28,4 +28,14 @@ describe('test convertColor function', () => {
             expect(colorRGB).toBe('rgb(0, 51, 255)');
         });
     });
+
+    describe('hex to rgba', () => {
+        test('as to rgb but with alpha chanel', () => {
+            const color = '#0033FF';
+
+            const colorRGB = convertColor(color, ColorTypes.HEX, ColorTypes.RGBA);
+
+            expect(colorRGB).toBe('rgba(0, 51, 255, 1)');
+        });
+    });
 });
