@@ -2,9 +2,9 @@ export enum ColorTypes {
     HEX,
     RGB,
     RGBA,
+    CMYK,
     HSL,
-    HWB,
-    CMYK
+    HWB
 }
 export enum TimingTypes {
     PERFORMANCE_API,
@@ -31,6 +31,10 @@ export type ConvertHexToRgbFunction = (
     color: string
 ) => any;
 export type ConvertHexToRgbaFunction = (
+    color: string,
+    alpha?: number
+) => any;
+export type ConvertHexToCmykFunction = (
     color: string
 ) => any;
 export type ConvertColorFunction = (
