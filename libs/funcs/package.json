@@ -2,17 +2,13 @@
   "name": "funcs",
   "version": "0.0.1",
   "description": "Helper functions",
-  "main": "index.js",
   "author": "Gemberg Alexey",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/grebmeg/helpers/issues"
-  },
-  "homepage": "https://github.com/grebmeg/helpers/libs/funcs#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grebmeg/helpers/libs/funcs.git"
+    "url": "git+ssh://github.com/grebmeg/helpers/libs/funcs.git"
   },
+  "main": "index.js",
   "types": "./build/types/index.d.ts",
   "scripts": {
     "test": "jest",
