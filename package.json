@@ -1,12 +1,12 @@
 {
-  "name": "funcs",
+  "name": "func-helpers",
   "version": "0.0.1",
   "description": "Helper functions",
   "author": "Gemberg Alexey",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/grebmeg/helpers/libs/funcs.git"
+    "url": "git+ssh://github.com/grebmeg/func-helpers.git"
   },
   "main": "index.js",
   "types": "./build/types/index.d.ts",

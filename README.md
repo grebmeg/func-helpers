@@ -1,3 +1,3 @@
-# 🤖 Multirepo
+## 🚁 func-helpers
 
-This multirepo is used for different packages to hold them as external dependencies for isolation purpose.
+It's library for function-helpers which can be useful in code.
